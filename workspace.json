@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "moon": "apps/moon",
+    "moon-e2e": "apps/moon-e2e"
+  }
+}

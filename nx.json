@@ -1,0 +1,55 @@
+{
+  "npmScope": "pixi-react",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "ZTg1MzQ5OGMtNjdmYS00ZGQyLTg0NTctNTEyZTFkMzJlYTI3fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "less",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "less"
+      },
+      "library": {
+        "style": "less",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "moon"
+}
