@@ -4,7 +4,7 @@ import NxWelcome from './nx-welcome';
 export function App() {
   return (
     <>
-      <NxWelcome title="moon" />
+      <NxWelcome title="moon2" />
       <div />
     </>
   );
